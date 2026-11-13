@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>태양계 탐험 | 홈</title>
+  <meta name="description" content="태양계 여덟 행성을 소개하는 정보 사이트">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🪐</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <canvas id="stars" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="index.html">☀ 태양계 <span>탐험</span></a>
+      <button class="nav-toggle" aria-label="메뉴 열기" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">홈</a></li>
+        <li><a href="planets.html">행성 소개</a></li>
+        <li><a href="compare.html">행성 비교</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <h1 class="fade-up">우리 이웃,<br><em>태양계</em>로 떠나는 여행</h1>
+        <p class="fade-up d1">태양을 중심으로 도는 여덟 개의 행성을 만나 보세요. 크기, 거리, 온도, 위성까지 행성마다 다른 모습을 쉽게 정리했습니다.</p>
+        <div class="hero-actions fade-up d2">
+          <a class="btn" href="planets.html">행성 둘러보기</a>
+          <a class="btn ghost" href="compare.html">한눈에 비교하기</a>
+        </div>
+      </div>
+      <div class="orbit-system" aria-label="태양 주위를 도는 행성 애니메이션" role="img">
+        <div class="orbit o8"><span class="dot"></span></div>
+        <div class="orbit o7"><span class="dot"></span></div>
+        <div class="orbit o6"><span class="dot"></span></div>
+        <div class="orbit o5"><span class="dot"></span></div>
+        <div class="orbit o4"><span class="dot"></span></div>
+        <div class="orbit o3"><span class="dot"></span></div>
+        <div class="orbit o2"><span class="dot"></span></div>
+        <div class="orbit o1"><span class="dot"></span></div>
+        <div class="sun"></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="intro-grid">
+        <div class="reveal">
+          <h2 class="section-title">태양계란?</h2>
+          <p class="section-sub">약 46억 년 전, 거대한 가스와 먼지 구름이 중력으로 뭉치면서 태양과 행성들이 만들어졌습니다.</p>
+          <p>태양계는 태양과 그 중력에 묶여 도는 천체들의 모임입니다. 여덟 개의 행성 외에도 왜소행성, 수많은 위성, 소행성과 혜성이 함께 태양 주위를 돌고 있습니다. 태양계 전체 질량의 약 99.8%를 태양이 차지합니다.</p>
+        </div>
+        <img class="reveal" src="images/system.jpg" alt="태양과 여덟 행성의 궤도를 그린 태양계 일러스트" loading="lazy">
+      </div>
+      <div class="stats panel reveal">
+        <div class="stat"><strong>8</strong><span>행성</span></div>
+        <div class="stat"><strong>46억 년</strong><span>태양계의 나이</span></div>
+        <div class="stat"><strong>99.8%</strong><span>태양이 차지하는 질량</span></div>
+        <div class="stat"><strong>8분 20초</strong><span>햇빛이 지구까지 오는 시간</span></div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title reveal">세 가지 종류의 행성</h2>
+      <p class="section-sub reveal">행성은 무엇으로 이루어졌는지에 따라 크게 세 무리로 나눌 수 있습니다.</p>
+      <div class="groups">
+        <article class="group panel reveal">
+          <h3>🪨 암석형 행성</h3>
+          <p>단단한 암석과 금속으로 이루어진 작은 행성입니다. 태양 가까이에 모여 있습니다.</p>
+          <div class="chips"><span class="chip">수성</span><span class="chip">금성</span><span class="chip">지구</span><span class="chip">화성</span></div>
+        </article>
+        <article class="group panel reveal">
+          <h3>🌪 가스형 행성</h3>
+          <p>수소와 헬륨이 대부분인 거대한 행성입니다. 단단한 표면이 없습니다.</p>
+          <div class="chips"><span class="chip">목성</span><span class="chip">토성</span></div>
+        </article>
+        <article class="group panel reveal">
+          <h3>🧊 얼음형 행성</h3>
+          <p>물, 암모니아, 메테인 같은 얼음 성분이 많은 차가운 거대 행성입니다.</p>
+          <div class="chips"><span class="chip">천왕성</span><span class="chip">해왕성</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta reveal">
+      <h2 class="section-title">행성 하나하나 자세히 알아볼까요?</h2>
+      <p>카드를 누르면 크기, 거리, 온도, 재미있는 사실을 볼 수 있습니다.</p>
+      <a class="btn" href="planets.html">행성 소개 보기 →</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>태양계 탐험 · 정보 제공용 사이트</p>
+    <p>이미지 출처: NASA / JPL / ESA (Wikimedia Commons, 퍼블릭 도메인)</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
